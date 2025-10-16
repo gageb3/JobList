@@ -34,7 +34,10 @@ Users can add, edit, view, and delete job applications with key details. Example
 The app supports status updates and follow-up reminders.
 Users can search, filter, and view progress through a simple dashboard with stored data in a database.
 The system includes an endpoint, API documentation, and a live deployment accessible to users.
+
 ## KM
+- The Job Tracker App helps users keep all of their job search information in one organized place. It turns scattered notes, emails, and lists into an easy-to-use system where users can see what jobs they have applied for, track updates, and remember follow-ups. <br>
+- This will save time by cutting out repetitive tasks like checking multiple sites or retyping the same details. The app helps users stay on top of their job search, avoid missing deadlines, and make better decisions using organized information.
 
 ## LINKS
 * [Wiki](https://github.com/gageb3/JobList/wiki)
