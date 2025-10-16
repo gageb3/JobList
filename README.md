@@ -23,7 +23,7 @@ Primary Metric: Reduces average time users spend manually managing job applicati
 
 # Product Overview
 Problem: Managing multiple job applications can be very tedious. With keeping track of things such as deadlines, recruiter contacts, and specific interview dates things usually end up scattered or unorganized. <br>
-Soloution: Joblist provides a clean, modern, and secure platform to: <br>
+Solution: Joblist provides a clean, modern, and secure platform to: <br>
 - Log and Manage every job application in one consistent place
 - Track Progress through each stage of the hiring process
 - Receive reminders for follow-ups or important deadlines
