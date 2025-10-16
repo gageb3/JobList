@@ -29,7 +29,11 @@ Solution: Joblist provides a clean, modern, and secure platform to: <br>
 - Receive reminders for follow-ups or important deadlines
 
 ## MINIMUM ACCPECTANCE CRITERIA
-
+Users can securely sign up, log in, and manage accounts. <br>
+Users can add, edit, view, and delete job applications with key details. Example: Company, Position, status, dates. <br>
+The app supports status updates and follow-up reminders.
+Users can search, filter, and view progress through a simple dashboard with stored data in a database.
+The system includes an endpoint, API documentation, and a live deployment accessible to users.
 ## KM
 
 ## LINKS
