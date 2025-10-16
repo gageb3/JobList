@@ -9,6 +9,9 @@ I want to have a list of jobs I have applied to
 so that I can keep track of my applications better
 
 # BLUF
+JobList is a site that will help job seekers keep track of job positions they have applied for.
+
+for a more indepth look of the project head to (insert link)
 
 # MINIMUM ACCPECTANCE CRITERIA
 
