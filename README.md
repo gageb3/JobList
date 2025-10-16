@@ -28,7 +28,7 @@ Solution: Joblist provides a clean, modern, and secure platform to: <br>
 - Track Progress through each stage of the hiring process
 - Receive reminders for follow-ups or important deadlines
 
-## MINIMUM ACCPECTANCE CRITERIA
+## MINIMUM ACCEPTANCE CRITERIA
 Users can securely sign up, log in, and manage accounts. <br>
 Users can add, edit, view, and delete job applications with key details. Example: Company, Position, status, dates. <br>
 The app supports status updates and follow-up reminders.
