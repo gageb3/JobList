@@ -13,9 +13,9 @@ JobList is a site that will help job seekers keep track of job positions they ha
 
 for a more indepth look of the project head to (insert link)
 
-What: A web based job application tracker that helps users organize, monitor, and analyze their job search progress in one place.
-Who: Designed for job seekers managing multiple applications, interviews, and follow-ups across different platforms.
-Value: Simplifies the job hunting process by displaying all job applications that the user has applied for, making the process more organized and optimal for the job searching process.
+What: A web based job application tracker that helps users organize, monitor, and analyze their job search progress in one place. <br>
+Who: Designed for job seekers managing multiple applications, interviews, and follow-ups across different platforms. <br>
+Value: Simplifies the job hunting process by displaying all job applications that the user has applied for, making the process more organized and optimal for the job searching process. <br>
 Primary Metric: Reduces average time users spend manually managing job applications by 30%. 
 - If a user currently spends 10 hours a week organizing job applications, the app could reduce that to 7 hours a week.
 
