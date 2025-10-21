@@ -40,6 +40,7 @@ for a more indepth look of the project head to (insert link)
 - This will save time by cutting out repetitive tasks like checking multiple sites or retyping the same details. The app helps users stay on top of their job search, avoid missing deadlines, and make better decisions using organized information.
 
 ## LINKS
+* [Product Proposal](https://github.com/gageb3/JobList/wiki/Product-Overview)
 * [Wiki](https://github.com/gageb3/JobList/wiki)
 
 ## here to keep track
