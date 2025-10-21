@@ -44,7 +44,7 @@ for a more indepth look of the project head to (insert link)
 * [OpenAPIDoc](docs/api-doc.md)
 * [Deployment URLs](docs/deployment-guide.md)
 * [Wiki](https://github.com/gageb3/JobList/wiki)
-* [Project Board]()
+* [Project Board](https://github.com/gageb3/JobList/issues)
 
 ## here to keep track
 This is Group 4 for the Team Product Assignment.
