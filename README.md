@@ -42,6 +42,7 @@ for a more indepth look of the project head to (insert link)
 ## LINKS
 * [Product Proposal](https://github.com/gageb3/JobList/wiki/Product-Overview)
 * [Wiki](https://github.com/gageb3/JobList/wiki)
+* [OpenAPIDoc](docs/api-doc.md)
 
 ## here to keep track
 This is Group 4 for the Team Product Assignment.
