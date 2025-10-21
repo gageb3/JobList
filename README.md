@@ -1,7 +1,7 @@
 # 🥀 Team Recruiters
-More about our [team](https://github.com/gageb3/JobList/wiki#team-members)<br>
-More about our [Process](https://github.com/gageb3/JobList/wiki/Dev-Processes)<br>
-Project: [Job Application Tracker](https://github.com/gageb3/JobList/wiki/Demo-Script)
+More about our [team](https://github.com/gageb3/Recruiters/wiki#team-members)<br>
+More about our [Process](https://github.com/gageb3/Recruiters/wiki/Dev-Processes)<br>
+Project: [Job Application Tracker](https://github.com/gageb3/Recruiters/wiki/Demo-Script)
 
 ## USER STORY
 As a job seeker<br>
@@ -29,8 +29,8 @@ so that I can keep track of my applications better
 - This will save time by cutting out repetitive tasks like checking multiple sites or retyping the same details. The app helps users stay on top of their job search, avoid missing deadlines, and make better decisions using organized information.
 
 ## LINKS
-* [Product Proposal](https://github.com/gageb3/JobList/wiki/Product-Overview)
+* [Product Proposal](https://github.com/gageb3/Recruiters/wiki/Product-Overview)
 * [OpenAPIDoc](docs/api-doc.md)
 * [Deployment URLs](docs/deployment-guide.md)
-* [Wiki](https://github.com/gageb3/JobList/wiki)
-* [Project Board](https://github.com/gageb3/JobList/issues)
+* [Wiki](https://github.com/gageb3/Recruiters/wiki)
+* [Project Board](https://github.com/gageb3/Recruiters/issues)
