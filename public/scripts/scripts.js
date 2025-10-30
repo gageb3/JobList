@@ -12,6 +12,26 @@ function showMessage(message, type = 'info') {
     }, 5000);
 }
 
+// Utility: normalize a job's date to an ISO YYYY-MM-DD string
+function jobToISOString(job) {
+    try {
+        if (!job || job.date === undefined || job.date === null) return '';
+
+        // If it's already a string, try to parse it
+        const d = (typeof job.date === 'string' || typeof job.date === 'number')
+            ? new Date(job.date)
+            : job.date instanceof Date
+                ? job.date
+                : new Date(job.date);
+
+        if (isNaN(d.getTime())) return '';
+
+        return d.toISOString().split('T')[0];
+    } catch (err) {
+        return '';
+    }
+}
+
 // Show temporary save indicator
 function showSaveIndicator(element, success = true) {
     const indicator = document.createElement('span');
@@ -68,7 +88,7 @@ async function loadJobs() {
                                     <div class="editable-field" 
                                          data-field="date" 
                                          data-job-id="${job._id}"
-                                         title="Click to edit date">${job.date.toISOString().split('T')[0]}</div>
+                                         title="Click to edit date">${jobToISOString(job)}</div>
                                 </div>
                                 <div class="col-md-3">
                                     <small class="text-muted">
@@ -82,17 +102,65 @@ async function loadJobs() {
                                     </button>
                                 </div>
                             </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <label class="form-label mb-1"><strong>Stage:</strong></label>
+                                    <input type="text" 
+                                           class="form-control form-control-sm stage-input" 
+                                           data-job-id="${job._id}" 
+                                           value="${job.stage || ''}" 
+                                           data-initial="${job.stage || ''}" 
+                                           placeholder="e.g., Applied, Phone Screen, Offer" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 `).join('');
 
-        // Add click event listeners for inline editing
-        addInlineEditListeners();
+    // Add click event listeners for inline editing
+    addInlineEditListeners();
+    // Add listeners for stage inputs (always visible textbox under each job)
+    addStageInputListeners();
 
         showMessage(`Loaded ${jobs.length} jobs. Click any field to edit!`, 'info');
     } catch (error) {
         showMessage(`❌ Error loading jobs: ${error.message}`, 'danger');
     }
+}
+
+// Add listeners for stage input elements (visible textbox under each job card)
+function addStageInputListeners() {
+    document.querySelectorAll('.stage-input').forEach(input => {
+        const jobId = input.getAttribute('data-job-id');
+
+        const saveStage = async () => {
+            const newValue = input.value.trim();
+            const initial = input.getAttribute('data-initial') || '';
+
+            // If unchanged, do nothing
+            if (newValue === initial) return;
+
+            // Call update API
+            const success = await updateJobField(jobId, 'stage', newValue);
+
+            if (success) {
+                input.setAttribute('data-initial', newValue);
+                showSaveIndicator(input.parentElement || input, true);
+            } else {
+                // revert to previous value on failure
+                input.value = initial;
+                showSaveIndicator(input.parentElement || input, false);
+            }
+        };
+
+        input.addEventListener('blur', saveStage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                input.blur();
+            }
+        });
+    });
 }
 
 // Add inline editing functionality
