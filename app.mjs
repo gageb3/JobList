@@ -77,8 +77,8 @@ app.get('/api/jobs', async (req, res) => {
 // UPDATE - Update a job by ID
 app.put('/api/jobs/:id', async (req, res) => {
   try {
-    const { id } = req.params;
-    const { company, position, date } = req.body;
+  const { id } = req.params;
+  const { company, position, date, stage } = req.body;
 
     // Validate ObjectId
     if (!ObjectId.isValid(id)) {
@@ -88,7 +88,9 @@ app.put('/api/jobs/:id', async (req, res) => {
     const updateData = {};
     if (company) updateData.company = company;
     if (position) updateData.position = position;
-    if (date) updateData.date = new Date(date);
+  if (date) updateData.date = new Date(date);
+  // allow updating stage (can be empty string)
+  if (stage !== undefined) updateData.stage = stage;
 
     const result = await db.collection('jobs').updateOne(
       { _id: new ObjectId(id) },
